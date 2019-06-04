@@ -1,0 +1,79 @@
+ Windows terminal helps you to use Bash , Powershell and cmd in One Terminal Windows without going to different windows.
+ 
+ 
+
+These are the steps to build Windows terminal from Source :-
+
+
+Perquisites :-
+You must be running  Windows 1903 , Build - 10.0.18362 in order to run Windows terminal.
+
+You must have Windows 1903 SDK installed ( Build - 10.0.18362)
+
+Better to Use Visual Studio 2019 
+Install these too from VS installer if using 2019 :- 
+
+Once You open Soltuion in Visual Studio you  will be prompt with missing tools to install automatically.
+- Desktop  Development C++
+- Universal   Windows Platform Development
+-  Install C++ ( v141 or v142)  Universal windows tools.
+
+Steps to Build :- 
+
+Git repository uses submodules for some dependencies. To restore or update the module use :-
+
+git submodule update --init --recursive
+
+
+OpenConsole.sln can be built using cmd or VS.
+ 
+ 
+ CMD :- 
+ 
+Go to directory :- tools 
+and run razzle 
+Message will Pop Up: Environment is ready to go ! 
+
+Then run : - bcz 
+
+If Everything goes correct , it will start building will take few minutes to build depending on your System .
+
+  Visual Studio 2019 :- 
+  
+  Open OpenConsole.sln 
+   Start Building that once successfull
+   
+   Go to Terminal directory in the solution.
+   
+   Search for Cascadia Package right click it and  click on the build.
+  
+   Once Building is done without any errors. 
+   
+   Click  Deploy & You will see Windows terminal ( Dev Build ) Start Menu .
+   
+   And thats it you have build Windows Terminal.
+   
+   
+   When you execute Windows Terminal you will see POWERSHELL AND CMD as option .
+   
+   If you want to add WSL you to add the profile of that in profile.json file.
+   
+   You will be able to find default Profile.json file in Terminal drop down settings.
+   
+   Just open the settings  and add the profile of Ubuntu just check that guid should be unique of every terminal you will be using .
+   
+   
+    For your help i have attached a profile.json of Ubuntu in this repository .
+    
+    Just save it and re-execute Windows Terminal and You will get New shell which you used in profile.json.
+    
+    
+    
+    Hope Everyone liked it.
+    
+   
+   
+   
+
+
+
